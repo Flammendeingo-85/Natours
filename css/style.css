@@ -4,6 +4,7 @@ COLORS:
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
+gray: #777;
 
 */
 
@@ -25,7 +26,7 @@ body {
   color: #777;
   padding: 30px;
 }
-
+/* HEADER SECTION */
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -40,6 +41,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+/* HEADER LOGO */
 .header-logo-box {
   position: absolute;
   top: 40px;
@@ -50,8 +52,10 @@ body {
   height: 35px; 
 }
 
+/* HEADER MAIN HEADING */
 .text-box { 
   position: absolute;
+  text-align: center;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -60,6 +64,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .heading-primary-main {
@@ -81,7 +86,7 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
-/* ANIMATION MOVEINLEFT */
+/* ANIMATIONS OF MAIN-HEADING */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -98,7 +103,7 @@ body {
   }
 }
 
-/* ANIMATION MOVEINRIGHT */
+/* ANIMATION OF SUB-HEADING*/
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -113,4 +118,30 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
