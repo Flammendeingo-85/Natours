@@ -41,7 +41,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-/* HEADER LOGO */
+/* HEADER AND LOGO STYLING */
 .header-logo-box {
   position: absolute;
   top: 40px;
@@ -49,11 +49,11 @@ body {
 }
 
 .header-logo {
-  height: 35px; 
+  height: 35px;
 }
 
-/* HEADER MAIN HEADING */
-.text-box { 
+/* MAIN AND SUB-HEADER */
+.text-box {
   position: absolute;
   text-align: center;
   top: 45%;
@@ -86,6 +86,10 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
+/**************/
+/* ANIMATIONS */
+/**************/
+
 /* ANIMATIONS OF MAIN-HEADING */
 @keyframes moveInLeft {
   0% {
@@ -103,7 +107,7 @@ body {
   }
 }
 
-/* ANIMATION OF SUB-HEADING*/
+/* ANIMATION OF SUB-HEADING */
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -120,6 +124,20 @@ body {
   }
 }
 
+/* ANIMATION OF BUTTON IN HEADER */
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MAIN BTN IN HEADER SECTION */
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -127,21 +145,48 @@ body {
   text-decoration: none;
   padding: 15px 40px;
   border-radius: 50px;
-  transition: all .2s;
+  transition: all 0.2s;
+  position: relative;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 .btn-white {
   background-color: #fff;
   color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.25s;
+  animation-fill-mode: backwards;
 }
