@@ -2,6 +2,7 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 $color-primary-gray: #777777;
+$color-primary-white: #ffffff;
 
 *,
 *::before,
@@ -63,7 +64,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-primary-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
 }
@@ -162,7 +163,7 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: $color-primary-white;
   color: $color-primary-gray;
 }
 
@@ -180,7 +181,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-primary-white;
 }
 
 .btn:hover::after {
