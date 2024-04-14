@@ -1,72 +1,9 @@
+/****************/
 /* SASS IMPORTS */
-/* MAIN COLORS */
-/* MAIN RESET */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-/* GLOBAL FONT SIZE */
-html {
-  font-size: 10px; }
-
-/* BODY STYLES */
-body {
-  box-sizing: border-box;
-  margin: inherit;
-  padding: inherit;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
-  color: #777777;
-  padding: 3rem; }
-
-/* HEADER SECTION */
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /* HEADER AND LOGO STYLING */ }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-
-/* MAIN AND SUB-HEADER */
-.heading__text-box {
-  position: absolute;
-  text-align: center;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .heading__text-box .heading__primary {
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 6rem; }
-    .heading__text-box .heading__primary--main {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
-      backface-visibility: hidden; }
-    .heading__text-box .heading__primary--sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.75rem;
-      animation: moveInRight 1s ease-out; }
-
+/****************/
+/* ABSTRACTS */
+/* MAIN COLORS VARIABLES*/
+/* BASE */
 /**************/
 /* ANIMATIONS */
 /**************/
@@ -101,6 +38,58 @@ body {
     opacity: 1;
     transform: translateY(0); } }
 
+/* MAIN RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* GLOBAL FONT SIZE */
+html {
+  font-size: 10px; }
+
+/* BODY STYLES */
+body {
+  box-sizing: border-box;
+  margin: inherit;
+  padding: inherit;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777777;
+  padding: 3rem; }
+
+/* MAIN AND SUB-HEADER */
+.heading__text-box {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .heading__text-box .heading__primary {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 6rem; }
+    .heading__text-box .heading__primary--main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 3.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      backface-visibility: hidden; }
+    .heading__text-box .heading__primary--sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.75rem;
+      animation: moveInRight 1s ease-out; }
+
+/* COMPONENTS */
 /* MAIN BTN IN HEADER SECTION */
 .btn:link, .btn:visited {
   display: inline-block;
@@ -144,3 +133,22 @@ body {
 .btn-animated {
   animation: moveInBottom 0.5s ease-out 0.25s;
   animation-fill-mode: backwards; }
+
+/* LAYOUT */
+/* HEADER SECTION */
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* HEADER AND LOGO STYLING */ }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+
+/* PAGES */

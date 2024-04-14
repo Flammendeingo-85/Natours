@@ -1,214 +1,23 @@
+/****************/
 /* SASS IMPORTS */
+/****************/
+
+/* ABSTRACTS */
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+/* BASE */
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
+/* COMPONENTS */
+@import "components/button";
+
+/* LAYOUT */
+@import "layout/header";
+
+/* PAGES */
 @import "pages/home";
-
-/* MAIN COLORS */
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-primary-gray: #777777;
-$color-primary-white: #ffffff;
-$color-primary-black: #111111;
-
-/* MAIN RESET */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-/* GLOBAL FONT SIZE */
-html {
-  font-size: 10px;
-}
-
-/* BODY STYLES */
-body {
-  box-sizing: border-box;
-  margin: inherit;
-  padding: inherit;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
-  color: $color-primary-gray;
-  padding: 3rem;
-}
-
-/* HEADER SECTION */
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
-    ),
-    url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
-  /* HEADER AND LOGO STYLING */
-  &__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-  }
-
-  &__logo {
-    height: 3.5rem;
-  }
-}
-
-/* MAIN AND SUB-HEADER */
-.heading__text-box {
-  position: absolute;
-  text-align: center;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  .heading__primary {
-    color: $color-primary-white;
-    text-transform: uppercase;
-    margin-bottom: 6rem;
-
-    &--main {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      animation-name: moveInLeft;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
-      backface-visibility: hidden;
-    }
-
-    &--sub {
-      display: block;
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 1.75rem;
-      animation: moveInRight 1s ease-out;
-    }
-  }
-}
-
-/**************/
-/* ANIMATIONS */
-/**************/
-
-/* ANIMATIONS OF MAIN-HEADING */
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* ANIMATION OF SUB-HEADING */
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* ANIMATION OF BUTTON IN HEADER */
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* MAIN BTN IN HEADER SECTION */
-.btn {
-  &:link,
-  &:visited {
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 5rem;
-    transition: all 0.2s;
-    position: relative;
-    font-size: 1.6rem;
-  }
-
-  &:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba($color-primary-black, 0.2);
-
-    &::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
-  }
-
-  &:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-primary-black, 0.2);
-  }
-
-  &--white {
-    background-color: $color-primary-white;
-    color: $color-primary-gray;
-
-    &::after {
-      background-color: $color-primary-white;
-    }
-  }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
-
-  &-animated {
-    animation: moveInBottom 0.5s ease-out 0.25s;
-    animation-fill-mode: backwards;
-  }
-}
