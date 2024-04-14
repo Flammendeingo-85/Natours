@@ -1,3 +1,16 @@
+/* SASS IMPORTS */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+
+/* MAIN COLORS */
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -5,6 +18,7 @@ $color-primary-gray: #777777;
 $color-primary-white: #ffffff;
 $color-primary-black: #111111;
 
+/* MAIN RESET */
 *,
 *::before,
 *::after {
@@ -13,11 +27,12 @@ $color-primary-black: #111111;
   box-sizing: inherit;
 }
 
+/* GLOBAL FONT SIZE */
 html {
-  /* GLOBAL FONT SIZE */
   font-size: 10px;
 }
 
+/* BODY STYLES */
 body {
   box-sizing: border-box;
   margin: inherit;
@@ -29,6 +44,7 @@ body {
   color: $color-primary-gray;
   padding: 3rem;
 }
+
 /* HEADER SECTION */
 .header {
   height: 95vh;

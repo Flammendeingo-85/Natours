@@ -1,3 +1,6 @@
+/* SASS IMPORTS */
+/* MAIN COLORS */
+/* MAIN RESET */
 *,
 *::before,
 *::after {
@@ -5,10 +8,11 @@
   padding: 0;
   box-sizing: inherit; }
 
+/* GLOBAL FONT SIZE */
 html {
-  /* GLOBAL FONT SIZE */
   font-size: 10px; }
 
+/* BODY STYLES */
 body {
   box-sizing: border-box;
   margin: inherit;
