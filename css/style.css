@@ -48,19 +48,19 @@
 
 /* GLOBAL FONT SIZE */
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
 
 /* BODY STYLES */
 body {
   box-sizing: border-box;
   margin: inherit;
-  padding: inherit;
+  padding: 3rem; }
+
+body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777777;
-  padding: 3rem; }
+  color: #777777; }
 
 /* MAIN AND SUB-HEADER */
 .heading__text-box {

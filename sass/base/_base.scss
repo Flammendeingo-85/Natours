@@ -9,18 +9,12 @@
 
 /* GLOBAL FONT SIZE */
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 /* BODY STYLES */
 body {
   box-sizing: border-box;
   margin: inherit;
-  padding: inherit;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /*font-size: 16px;*/
-  line-height: 1.7;
-  color: $color-primary-gray;
   padding: 3rem;
 }
