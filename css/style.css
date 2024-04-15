@@ -46,7 +46,7 @@
   padding: 0;
   box-sizing: inherit; }
 
-/* GLOBAL FONT SIZE */
+/* GLOBAL FONT SIZE  - THIS DEFINES WHAT 1REM IS */
 html {
   font-size: 62.5%; }
 
@@ -150,5 +150,10 @@ body {
     left: 4rem; }
   .header__logo {
     height: 3.5rem; }
+
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
 
 /* PAGES */
