@@ -1,5 +1,23 @@
+// EVERY ROW EXCEPT THE lAST-CHILD
 .row {
-  max-width: 114rem;
+  max-width: $grid-width;
   background-color: #eee;
   margin: 0 auto;
+  
+  //NO MARGIN-BOTTOM 
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  } 
+
+  @include clearfix
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+    background-color: pink;
+    float: left;
+  
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
+    }
+  }
 }
