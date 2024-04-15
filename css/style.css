@@ -136,6 +136,26 @@ body {
   animation-fill-mode: backwards; }
 
 /* LAYOUT */
+.row {
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: pink;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 1 * 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+
 /* HEADER SECTION */
 .header {
   height: 95vh;
@@ -151,22 +171,5 @@ body {
     left: 4rem; }
   .header__logo {
     height: 3.5rem; }
-
-.row {
-  max-width: 114rem;
-  background-color: #eee;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2);
-    background-color: pink;
-    float: left; }
-    .row .col-1-of-2:not(:last-child) {
-      margin-right: 6rem; }
 
 /* PAGES */
