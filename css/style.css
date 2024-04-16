@@ -179,3 +179,6 @@ body {
     height: 3.5rem; }
 
 /* PAGES */
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0; }
