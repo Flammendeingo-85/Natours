@@ -1,7 +1,6 @@
 // EVERY ROW EXCEPT THE lAST-CHILD
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
   
   //NO MARGIN-BOTTOM 
@@ -13,7 +12,6 @@
 
 
   [class^="col-"] {
-    background-color: pink;
     float: left;
 
     &:not(:last-child) {
