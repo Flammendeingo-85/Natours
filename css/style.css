@@ -2,9 +2,15 @@
 /* SASS IMPORTS */
 /****************/
 /* ABSTRACTS */
-/* MAIN COLORS VARIABLES*/
+/*************************/
+/* MAIN COLORS VARIABLES */
+/*************************/
+/**************/
 /* FONT SIZES */
+/**************/
+/******************/
 /* GRID VARIABLES */
+/******************/
 /* BASE */
 /**************/
 /* ANIMATIONS */
@@ -69,6 +75,9 @@ body {
   padding: 3rem;
 }
 
+/*************/
+/* BODY FONT */
+/*************/
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -76,7 +85,9 @@ body {
   color: #777777;
 }
 
-/* MAIN AND SUB-HEADER */
+/***********************/
+/* MAIN AND SUB-HEADING */
+/***********************/
 .heading__text-box {
   position: absolute;
   text-align: center;
@@ -107,6 +118,9 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
+/************************/
+/* TERTIARY HEADING AND PARAGRAPHS */
+/************************/
 .heading-secondary {
   display: inline-block;
   font-size: 3.5rem;
@@ -154,6 +168,9 @@ body {
 }
 
 /* COMPONENTS */
+/*************************/
+/* FEATURE SECTION BOXES */
+/*************************/
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -161,7 +178,16 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.15);
-  transition: transform all 0.3s;
+  transition: transform 0.3s;
+  /*************/
+  /* BOX ICONS */
+  /*************/
+  /*************/
+  /* BOX HOVER */
+  /*************/
+  /************/
+  /* BOX TEXT */
+  /************/
 }
 .feature-box__icon {
   font-size: 6rem;
