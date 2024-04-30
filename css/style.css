@@ -219,6 +219,8 @@ body {
   width: 100%;
   backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(17, 17, 17, 0.15);
 }
 .card__side--front {
   background-color: #ffffff;
@@ -227,10 +229,10 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back-1 {
-  background-color: linear-gradient(to bottom right, #ffb900, #ff7730);
+  background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
 }
 .card:hover .card__side--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card:hover .card__side--back {
   transform: rotateY(0deg);
