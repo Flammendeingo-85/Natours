@@ -43,4 +43,14 @@
   &:hover &__side--back {
     transform: rotateY(0deg);
   }
+  /***************************/
+  /* FRONT SIDE CARD-STYLING */
+  /***************************/
+  &__picture {
+
+    &--1 {
+      background-image: url(../img/nat-5.jpg);
+      
+    }
+  }
 }
