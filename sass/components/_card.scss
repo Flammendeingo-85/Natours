@@ -47,10 +47,18 @@
   /* FRONT SIDE CARD-STYLING */
   /***************************/
   &__picture {
-
+    background-size: cover;
+    height: 23rem;
     &--1 {
       background-image: url(../img/nat-5.jpg);
-      
+    }
+
+    &--2 {
+      background-image: url(../img/nat-5.jpg);
+    }
+
+    &--3 {
+      background-image: url(../img/nat-5.jpg);
     }
   }
 }
