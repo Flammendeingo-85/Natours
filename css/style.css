@@ -256,6 +256,16 @@ body {
 .card__picture--3 {
   background-image: url(../img/nat-5.jpg);
 }
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+}
 
 /* MAIN BTN IN HEADER SECTION */
 .btn:link, .btn:visited {
